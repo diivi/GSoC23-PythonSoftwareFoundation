@@ -74,4 +74,26 @@ I also aim to bring and assist new contributors in getting started with the proj
 
 ## Acknowledgements
 
-## All Pull Requests
+## All Pull Requests (Before and During GSoC, in chronological order)
+
+### [Borg](https://github.com/borgbackup/borg)
+- [#7388 feat: add cache dir to --debug](https://github.com/borgbackup/borg/pull/7388)
+
+### [Vorta](https://github.com/borgbase/vorta)
+
+- [#1606 feat: remove paramiko](https://github.com/borgbase/vorta/pull/1606)
+- [#1609 feat: add a link to the logs folder in borg warnings](https://github.com/borgbase/vorta/pull/1609)
+- [#1612 chore: replace print with logging in application.py](https://github.com/borgbase/vorta/pull/1612)
+- [#1613 feat: descriptive messages when no sources are selected to backup](https://github.com/borgbase/vorta/pull/1613)
+- [#1621 feat: add settings for files list views](https://github.com/borgbase/vorta/pull/1621)
+- [#1637 feat: add profile name to log messages](https://github.com/borgbase/vorta/pull/1637)
+- [#1656 feat: block after vorta –create and log status](https://github.com/borgbase/vorta/pull/1656)
+- [#1658 feat: settings to allow new networks and show notif when a network is disallowed](https://github.com/borgbase/vorta/pull/1658)
+- [#1664 feat: quick mount](https://github.com/borgbase/vorta/pull/1664)
+- [#1665 feat: assign names to repos](https://github.com/borgbase/vorta/pull/1665)
+- [#1666 ci: add ruff for print checks](https://github.com/borgbase/vorta/pull/1666)
+- [#1723 feat: refresh multiple archives](https://github.com/borgbase/vorta/pull/1723)
+- [#1727 feat: remove compact button for borg versions < 1.2 ](https://github.com/borgbase/vorta/pull/1727)
+- [#1732 feat: add a trigger column to the archive table](https://github.com/borgbase/vorta/pull/1732)
+- [#1734 feat: inline edit for archive renaming](https://github.com/borgbase/vorta/pull/1734)
+- [#1742 feat: exclude gui](https://github.com/borgbase/vorta/pull/1742) 
