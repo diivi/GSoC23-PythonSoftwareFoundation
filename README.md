@@ -30,20 +30,21 @@ As for Borgmatic, I expanded its already powerful capabilities, particularly in 
 1. **A new and improved GUI dialog** in Vorta for managing exclusion rules before creating a backup.
 
    Before
-![Exclude GUI Before](./assets/exclude-gui-before.png)
+   
+   ![Exclude GUI Before](./assets/exclude-gui-before.png)
 
    After
+   
+   [New Exclude GUI](https://github.com/borgbase/vorta/assets/41837037/f7bf556a-77a2-4708-a5ba-a5f6bda1f641)
 
-   [Exclude GUI Demo](./assets/exclude-gui-after.webm)
-
-2. **Enhanced the archive table by adding Quality of Life improvements** like allowing users to rename an archive by double-clicking on it, and adding a new column to display whether the archive was created by the user or by the scheduler.
+3. **Enhanced the archive table by adding Quality of Life improvements** like allowing users to rename an archive by double-clicking on it, and adding a new column to display whether the archive was created by the user or by the scheduler.
    ![Rename and trigger](./assets/rename-and-trigger.png)
    Also made it possible for users to refresh multiple archives at once, instead of one at a time, which was bad UX.
    ![Refresh multiple archives](assets/refresh-multiple.gif)
    Added a "Quick Mount" button to the archive table, which allows users to mount an archive with a single click to a temporary location. This is useful for quickly accessing files from a backup archive without having to restore the entire archive, or creating a folder and then mounting the archive to it.
    ![Quick Mount](./assets/quick-mount.gif)
   
-3. borgmatic - **Add functionality to support restoring a database dump to a different hostname/port/username than the ones used to create the dump.**
+4. borgmatic - **Add functionality to support restoring a database dump to a different hostname/port/username than the ones used to create the dump.**
    
    This was a frequently requested feature and I worked on adding these parameters to the borgmatic configuration file and CLI arguments.
    
@@ -51,7 +52,7 @@ As for Borgmatic, I expanded its already powerful capabilities, particularly in 
 
    ![GitHub OpenGraph image for the PR](https://opengraph.githubassets.com/1/borgmatic-collective/borgmatic/pull/73)
 
-4. **Bootstrap a borgmatic restore from nothing** - This was another frequently requested feature, that would turn out to be a lifesaver for many users. It allows users to **restore their entire borgmatic-created backup, without having a borgmatic configuration file**. This is useful in cases where the user has lost their configuration file, or if they are trying to restore a backup created by someone else, or even when the user has lost access to everything except the backup archive.
+5. **Bootstrap a borgmatic restore from nothing** - This was another frequently requested feature, that would turn out to be a lifesaver for many users. It allows users to **restore their entire borgmatic-created backup, without having a borgmatic configuration file**. This is useful in cases where the user has lost their configuration file, or if they are trying to restore a backup created by someone else, or even when the user has lost access to everything except the backup archive.
 
    The solution was designed and implemented completely by me from scratch, thanks to the trust that Dan had in me. I learned a lot about the internals of borgmatic and Borg while working on this feature, and also how to write tests for it. The testing was one of the most challenging parts of this feature, as it required me to mock a lot of things, and I had never written tests so extensively before.
 
