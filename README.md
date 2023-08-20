@@ -74,13 +74,35 @@ I also aim to bring and assist new contributors in getting started with the proj
 
 ## Acknowledgements
 
-## All Pull Requests (Before and During GSoC, in chronological order)
+## Pull Requests
+A list of all the pull requests I made before and during GSoC, in chronological order of their creation for each project.
 
-### [Borg](https://github.com/borgbackup/borg)
-- [#7388 feat: add cache dir to --debug](https://github.com/borgbackup/borg/pull/7388)
+### [borgmatic](https://github.com/borgmatic-collective/borgmatic)
+![Borgmatic Contributor Stats](./assets/borgmatic-contributor-stats.png)
+- [#50 feat: add dump-restore support for SQLite databases](https://github.com/borgmatic-collective/borgmatic/pull/50)
+- [#52 fix: remove extra dark mode styles](https://github.com/borgmatic-collective/borgmatic/pull/52)
+- [#53 feat: add optional check for the existence of source directories](https://github.com/borgmatic-collective/borgmatic/pull/53)
+- [#54 feat: file:// URLs support](https://github.com/borgmatic-collective/borgmatic/pull/54)
+- [#55 fix: rephrase error when running from config](https://github.com/borgmatic-collective/borgmatic/pull/55)
+- [#56 fix: no error on database backups without source dirs](https://github.com/borgmatic-collective/borgmatic/pull/56)
+- [#57 feat: tag repos](https://github.com/borgmatic-collective/borgmatic/pull/57)
+- [#58 docs: copy to clipboard support](https://github.com/borgmatic-collective/borgmatic/pull/58)
+- [#59 fix: remove extra links from docs css](https://github.com/borgmatic-collective/borgmatic/pull/59)
+- [#60 feat: allow defining custom variables in config file](https://github.com/borgmatic-collective/borgmatic/pull/60)
+- [#61 fix: docs cli reference create spelling](https://github.com/borgmatic-collective/borgmatic/pull/61)
+- [#62 fix: replace primitive values in config without quotes](https://github.com/borgmatic-collective/borgmatic/pull/62)
+- [#63 fix: make check repositories work with dict and str repositories](https://github.com/borgmatic-collective/borgmatic/pull/63)
+- [#65 fix: run typos](https://github.com/borgmatic-collective/borgmatic/pull/65)
+- [#66 chore: add favicon to documentation](https://github.com/borgmatic-collective/borgmatic/pull/66)
+- [#67 feat: restore specific schemas](https://github.com/borgmatic-collective/borgmatic/pull/67)
+- [#68 feat: add logfile name to hook context for interpolation](https://github.com/borgmatic-collective/borgmatic/pull/68)
+- [#71 feat: store configs used to create an archive in the archive and add borgmatic bootstrap](https://github.com/borgmatic-collective/borgmatic/pull/71)
+- [#73 feat: allow restoring to different port/host/username](https://github.com/borgmatic-collective/borgmatic/pull/73)
+- [#74 docs: add docs for database restore params and config bootstrap](https://github.com/borgmatic-collective/borgmatic/pull/74)
+- [#75 feat: optionally disable config bootstrap](https://github.com/borgmatic-collective/borgmatic/pull/75)
 
 ### [Vorta](https://github.com/borgbase/vorta)
-
+![Vorta Contributor Stats](./assets/vorta-contributor-stats.png)
 - [#1606 feat: remove paramiko](https://github.com/borgbase/vorta/pull/1606)
 - [#1609 feat: add a link to the logs folder in borg warnings](https://github.com/borgbase/vorta/pull/1609)
 - [#1612 chore: replace print with logging in application.py](https://github.com/borgbase/vorta/pull/1612)
@@ -96,4 +118,7 @@ I also aim to bring and assist new contributors in getting started with the proj
 - [#1727 feat: remove compact button for borg versions < 1.2 ](https://github.com/borgbase/vorta/pull/1727)
 - [#1732 feat: add a trigger column to the archive table](https://github.com/borgbase/vorta/pull/1732)
 - [#1734 feat: inline edit for archive renaming](https://github.com/borgbase/vorta/pull/1734)
-- [#1742 feat: exclude gui](https://github.com/borgbase/vorta/pull/1742) 
+- [#1742 feat: exclude gui](https://github.com/borgbase/vorta/pull/1742)
+
+### [Borg](https://github.com/borgbackup/borg)
+- [#7388 feat: add cache dir to --debug](https://github.com/borgbackup/borg/pull/7388)
