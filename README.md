@@ -2,7 +2,7 @@
 ## Python Software Foundation - Borg Collective
 <br/>
 
-![Header Image](./assets/header-image.png)
+![Header Image](./assets/cover-img.png)
 
 **Contributor**: [Divyansh Singh (divi)](https://github.com/diivi)
 
