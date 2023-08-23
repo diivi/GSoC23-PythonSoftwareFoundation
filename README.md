@@ -108,7 +108,24 @@ For more details, check [this](https://projects.torsion.org/borgmatic-collective
 
 ## Challenges and Takeaways
 
+True learning happens when you step out of your comfort zone, and this GSoC was a great example of that. I can confidently say that I am coming out of this GSoC as a much better developer and thinker than I was before, and I learned a lot of new things along the way. Some learnings that I'd like to share are:
+
+* **Project Management & Planning** - I learned how to plan and manage a project, and how to break down a large project into smaller, more manageable tasks. I also learned how to prioritize tasks and how to manage my time to complete them on time. Another thing that I learned is that deciding what not to do is just as important as deciding what to do, and you can't make the perfect product in the first go, so it's better to focus on the most important features first and then add the rest later.
+* **Design and accessibility** - I learned how to design and develop interfaces that are accessible to everyone, and how to make them look good and be functional at the same time. I also learned how to use the Qt Designer to design interfaces, and how to use the Qt Style Sheets to style them. During the contributor bonding period, I designed the interface I wanted to implement in Vorta with Figma, discussions with @real-yfprojects helped me improve it and learn more about design. I also implemented a lot of shortcuts and context menus in Vorta, which made it easier to use for users who prefer using the keyboard over the mouse.
+* **Qt and GUIs** - Before GSoC, I had never worked with Qt, and I learned a lot about it during the summer. I learned how to use the Qt Designer to design interfaces, what slots and signals are, how to use them, and a lot more about Qt widgets and layouts. My mentors @m3nu, @real-yfprojects and @Hofer-Julian were very supportive, and did not give me the answers directly, but instead guided me in the right direction and helped me figure out the solutions myself. This has made me confident in my Qt skills, and I am sure I can use them to build more amazing things in the future.
+* **CLIs and databases** - Adding subcommands and the "bootstrap" command to borgmatic taught me a lot about argparse and the complexities of CLIs. I learned how to use argparse to add subcommands and arguments to a CLI, and how to use the subcommands and arguments in the code. borgmatic also supports backing up and restoring databases, and I learned a lot about how databases work, and how to back them up and restore them using borgmatic. I also learned how to use Docker to test database backups and restores, and how to mock databases in tests. I worked with PostgreSQL, MySQL, MariaDB, MongoDB and SQLite, and was frequently surfing their documentation to learn more about them.
+* **Writing tests** - I learned how to write tests for my code, and how to use Docker to test my code in different environments. I also learned how to mock fnctions and inbuilt methods in tests, how to write tests for GUIs, how to use the pytest framework, and also using the flexmock package to test my code. Some other takeaways of mine were using the pytest-qt plugin to write tests for Qt GUIs and using code coverage tools like pytest-cov to check the coverage of my tests. I had never written tests so extensively before, and I am sure this will help me in the future.
+
+There's a lot more that I've learned during this GSoC, like using Docker and even 11ty to build static sites. Non-technical skills like communication and time management are also very important, and I learned a lot about them too. I am sure that I will be able to use all these skills in the future, and I am grateful to the Borg Collective for giving me this opportunity to improve not only my code quality but also my soft skills.
 ## Acknowledgements
+
+I believe communication and collabration are the most important aspects of any project, and I was lucky to have a great mentor like Dan (@witten), who is great at both of these. He was always there to help me out whenever I got stuck, and was super active during GSoC to help me complete my projects on time. He did not miss a single meeting during the summer and even asked me if I wanted to have extra meetings to clear doubts, which shows how dedicated he was to the project too. I learned a lot from him, like writing tests, project management, and insights about careers in software development. He also helped me improve my communication skills, by introducing me to new words and phrases through our conversations. I'd like to thank him for being such a great mentor, in all aspects.
+
+The Vorta maintainers have also been very helpful and supportive throughout the project, and I'd like to thank them for their help and guidance too. I had never worked with Qt before, but they were always there to help me out, and I learned a lot from them. Reviews from @m3nu, @real-yfprojects and @Hofer-Julian were very helpful and detailed. Their keen eye and attention to detail helped me improve my code quality and push my limits. I'd like to thank them for their dedication and support, and making me comfortable with Qt.
+
+I am grateful to the Python Software Foundation and the Borg Collective for giving me this opportunity, and hope they participate in GSoC again to help more students like me. The Borg community, from IRC to GitHub, has been nothing but welcoming and supportive, and I'd like to thank them for their help and guidance too. Of course, I'd also like to thank Google for organizing GSoC and giving me this opportunity to work on such an amazing project, with such amazing people.
+
+Lastly, I'd like to thank my parents for their support and encouragement, and my friends for always being there for me, from helping me with designs to reviewing my proposal, they were always there to help me out.
 
 ## Pull Requests
 A list of all the pull requests I made before and during GSoC, in chronological order of their creation for each project.
@@ -158,3 +175,6 @@ A list of all the pull requests I made before and during GSoC, in chronological 
 
 ### [Borg](https://github.com/borgbackup/borg)
 - [#7388 feat: add cache dir to --debug](https://github.com/borgbackup/borg/pull/7388)
+
+
+## Thanks to the Borg Collective for an amazing Summer of Code! 🎉
