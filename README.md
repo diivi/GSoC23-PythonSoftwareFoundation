@@ -41,6 +41,19 @@ As for Borgmatic, I expanded its already powerful capabilities, particularly in 
    
    [New Exclude GUI](https://github.com/borgbase/vorta/assets/41837037/f7bf556a-77a2-4708-a5ba-a5f6bda1f641)
 
+   The old GUI was very basic and **didn't allow users to do much**, it was a simple multi-line plaintext input box. It was also not very intuitive, and **users had a hard time figuring out how to use it**. There's a [GitHub issue](https://github.com/borgbase/vorta/issues/907) that has been open for a long time, requesting a better GUI for managing exclusion rules, where many Vorta users have shared their thoughts and ideas on how to improve it.
+   
+   The new GUI that I made is based on the famous KDE slogan, **"Simple by default, powerful when needed".** It allows users to **manage exclusions patterns** for their backups with ease and splits the exclusions into 3 tabs:
+   
+   1. **Custom** - This tab allows users to add custom exclusion rules, which are then passed to Borg as-is. This is useful for users who want to use **Borg's powerful exclusion syntax** to exclude files and directories using the various [patterns](https://borgbackup.readthedocs.io/en/stable/usage/help.html) that Borg supports. Adding and deleting patterns (multiple patterns too) is as simple as clicking a button. This tab also features a **context menu** that allows the users to do the same, and supports detecting the **Del key to delete patterns.**
+
+   2. **Presets** - This tab allows users to select from a list of preset exclusion rules, which are stored as json files in the Vorta repository. These rules are **added by the community** and are **useful for beginners** who don't want to learn the Borg exclusion syntax and just want to exclude some common files and directories from their backups.
+
+   3. **Raw** - Not only can users add singular patterns and presets, but they can also paste a **list of patterns** in this tab, and Vorta will **automatically split them into individual patterns** and add them to the list. This is useful for users who have a large number of patterns and don't want to add them one by one.
+   This tab also **supports comments** in the patterns, which is useful for users who want to add some context to their patterns, or want to add a description of what the pattern does.
+
+   Finally, all the exclusions that will be passed to Borg when the backup is created are **displayed in the Preview tab**, which allows users to see what will be excluded from their backup before they create it. The preview tab also features a **"Copy to Clipboard"** button, which allows users to copy the exclusions to their clipboard and paste them wherever they want, which makes **importing and exporting exclusions** very easy (you just need to copy the preview and paste it in the Raw tab of another Vorta instance).
+
 2. **Enhanced the archive table by adding Quality of Life improvements** like **allowing users to rename an archive by double-clicking on it and pressing enter**, and adding a **new column to display whether the archive was created by the user or by the scheduler.**
    
    Earlier, users had to right-click on an archive, select the "Rename" option in a context menu, and enter the new name in a dialog box, which was not very intuitive, involved a lot of clicks, and was a **bad user experience.**
